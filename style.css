@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1920&auto=format&fit=crop') no-repeat center center / cover;
+  color: #ffffff;
+  position: relative;
+}
+
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+
+.header, main, .social-icon {
+  position: relative;
+  z-index: 1;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.header nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover,
+.header nav a[aria-current="page"] {
+  color: #ffffff;
+}
+
+.header .contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header .contact i {
+  font-size: 12px;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.home {
+  max-width: 500px;
+}
+
+.name h1 {
+  font-size: 54px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.name p {
+  font-size: 20px;
+  color: #d1d1d1;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.actions button {
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 32px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+
+.social-icon {
+  display: flex;
+  gap: 18px;
+  padding: 40px 70px;
+}
+
+.social-icon a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.abtme{
+    background: transparent;
+    border: 5px solid #ddd3d3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    
+}
+.portfolio{
+    background: transparent;
+    border: 2px solid;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
